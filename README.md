@@ -1,21 +1,10 @@
 # Metex
 
-**TODO: Add description**
+You'll be using my API key, but that's OK.
 
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `metex` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:metex, "~> 0.1.0"}
-  ]
-end
+Send an array of locations to get the weather:
 ```
+cities = ["Singapore", "Durham, North Carolina, USA"]
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/metex](https://hexdocs.pm/metex).
-
+Metex.temperatures_of(cities)
+```
